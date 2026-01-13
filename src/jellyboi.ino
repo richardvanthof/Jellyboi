@@ -1,4 +1,4 @@
-/ Ultrasonic Pins
+// Ultrasonic Pins
 const int trigPin = 7;
 const int echoPin = 6;
 
