@@ -20,7 +20,7 @@ const int led = 3;
 // Settings
 // =====================
 const int minBrightness = 15;    // Dim glow when idle
-const int triggerDistance = 140;  // cm
+const int triggerDistance = 130;  // cm
 const int MOTOR_POWER = 255;     // motor PWM power
 
 // Pulsing settings
@@ -85,6 +85,9 @@ void jellySwim() {
 
   }
 
+  motorDown();
+  delay(3000);
+
   motorStop();
   delay(400);
 }
@@ -95,6 +98,11 @@ void jellySwim() {
 void motorUp() {
   digitalWrite(in1Pin, HIGH);
   digitalWrite(in2Pin, LOW);
+}
+
+void motorDown() {
+  digitalWrite(in1Pin, LOW);
+  digitalWrite(in2Pin, HIGH);
 }
 
 void motorStop() {
