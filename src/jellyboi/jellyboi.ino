@@ -20,7 +20,7 @@ const int led = 3;
 // Settings
 // =====================
 const int minBrightness = 15;    // Dim glow when idle
-const int triggerDistance = 80;  // cm
+const int triggerDistance = 140;  // cm
 const int MOTOR_POWER = 255;     // motor PWM power
 
 // Pulsing settings
